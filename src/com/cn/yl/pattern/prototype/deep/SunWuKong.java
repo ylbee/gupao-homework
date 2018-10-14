@@ -2,12 +2,15 @@ package com.cn.yl.pattern.prototype.deep;
 
 import java.io.*;
 
-//浅克隆 自己引用自己的时候就使用了同一个引用了
-//孙悟空
+//深克隆  利用序列化实现克隆
 public class SunWuKong implements Cloneable, Serializable  {
-    //孙悟空可以复制自己
-    SunWuKong sunWuKong;
+
     JinGuBang jinGuBang;
+
+    public SunWuKong(JinGuBang jinGuBang) {
+        this.jinGuBang = jinGuBang;
+    }
+
     protected SunWuKong clone() throws CloneNotSupportedException{
         return deepClone();
     }

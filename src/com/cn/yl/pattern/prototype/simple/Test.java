@@ -3,13 +3,10 @@ package com.cn.yl.pattern.prototype.simple;
 public class Test {
     public static void main(String[] args) {
         try {
-            SunWuKong sunWuKong = new SunWuKong();
-            sunWuKong.sunWuKong = new SunWuKong();
-            sunWuKong.sunWuKong.jinGuBang=new JinGuBang();
-            System.out.println("孙悟空的金箍棒"+sunWuKong.sunWuKong.jinGuBang);
-            SunWuKong monkey = sunWuKong.clone();
-            System.out.println("克隆猴子金箍棒"+monkey.sunWuKong.jinGuBang);
-
+            SunWuKong sunWuKongPrototype  = new SunWuKong(new JinGuBang());
+            SunWuKong sunWuKongClone  = sunWuKongPrototype.clone();
+            System.out.println("孙悟空的金箍棒"+sunWuKongPrototype.jinGuBang);
+            System.out.println("克隆猴的金箍棒"+sunWuKongClone.jinGuBang);
         } catch (Exception e) {
             e.printStackTrace();
         }
