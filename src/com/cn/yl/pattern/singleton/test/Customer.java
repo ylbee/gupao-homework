@@ -15,8 +15,8 @@ public class Customer implements Runnable{
         ((HungryTicket) hungryTicket2).setNum(22);
         System.out.println("饿汉式单例模式============");
         System.out.println(hungryTicket1==hungryTicket2);
-        System.out.println(((HungryTicket) hungryTicket1).getNum());
-        System.out.println(((HungryTicket) hungryTicket2).getNum());
+        System.out.println(((HungryTicket) hungryTicket1));
+        System.out.println(((HungryTicket) hungryTicket2));
 
         Object lazyTicket1= LazyTicket.getTicket(10);
         Object lazyTicket2= LazyTicket.getTicket(20);
