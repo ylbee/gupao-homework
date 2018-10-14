@@ -1,6 +1,6 @@
 package com.cn.yl.pattern.factory.method;
 
-//工厂具体化，不同工厂生产不同产品
+//工厂具体化，不同工厂生产不同产品   客户不需要知道内部怎么实现，只需要拿到产品就行
 public class Customer {
 
     public static void main(String[] args) {

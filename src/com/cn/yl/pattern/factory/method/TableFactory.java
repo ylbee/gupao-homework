@@ -3,7 +3,7 @@ package com.cn.yl.pattern.factory.method;
 import com.cn.yl.pattern.factory.pojo.Furniture;
 import com.cn.yl.pattern.factory.pojo.Table;
 
-//具体的产品生产
+//具体的产品生产流水线生产
 public class TableFactory implements Factory {
     @Override
     public Furniture getFuniture() {
