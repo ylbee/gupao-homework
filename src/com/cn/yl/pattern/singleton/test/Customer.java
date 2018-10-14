@@ -20,7 +20,7 @@ public class Customer implements Runnable{
 
         Object lazyTicket1= LazyTicket.getTicket(10);
         Object lazyTicket2= LazyTicket.getTicket(20);
-        System.out.println("懒汉式非线程安全单例模式===========");
+        System.out.println("懒汉式非线程安全单例模式 ===========");
         System.out.println(lazyTicket1==lazyTicket2);
         System.out.println(lazyTicket1);
         System.out.println(lazyTicket2);
